@@ -13,7 +13,7 @@ var me = {
 };
 var i;
 
-for (i in me)console.log(me[i]);
+for (i in me)console.log(i+" : ",me[i]);
 
 //me (function term(x) {console.log(x)});
 /*
@@ -21,4 +21,17 @@ Comments :-)
 
 syntax
 var x=value  ,  y  , ... ;
- */
+
+switch () {
+    case : ;
+    case : ;
+    default : ;
+}
+
+x=2, y="2"  x==y true  x===y false
+*/
+var people = ["nate", "Sam", "Ellen"],
+    i;
+for (i=0; i<people.length; i++){
+    console.log(people[i]);
+}

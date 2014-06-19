@@ -55,3 +55,34 @@ var sum=0;
  })
 
 console.log (sum);
+
+var array = [1,2,3,4];
+
+console.log(array);
+console.log(array.toString());
+console.log(array.join("--"));
+
+function join(arr, str){
+    var output = "";
+    arr.forEach(function(item, idx){
+        output += item;
+        if (idx < arr.length-1) output += str;
+    })
+    return output;
+}
+
+console.log (join(array,"---"));
+
+var array_string="1,2,3,4";
+console.log(array_string
+    .split(",")
+    .map(function(str){
+        return parseFloat(str)
+    }));
+
+var item = [];
+array_string.split(",").forEach(function(item, i){
+    item[i] = parseFloat(item);
+})
+
+console.log(item);

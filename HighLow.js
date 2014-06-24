@@ -8,9 +8,7 @@ var min = 1,
 console.log ("Secret Number = ", num);
 
 while ( !found ){
-    //console.log("Where am I?",guesses);
     guess();
-    //console.log(guesses);
 }
 
 function guess() {
@@ -19,7 +17,7 @@ function guess() {
         current = {
             num: low + Math.floor((high - low)/2)
         };
-    //console.log("guess");
+
     if (current.num < num) {current.dir = -1;}  //dir = direction
     else if (current.num > num) {current.dir = 1;} //  too high
     else {current.dir = 0;}
@@ -56,5 +54,5 @@ function getLowestHigh(){
 
 
 function randomNum(max) {
-    return Math.ceil(Math.random() * max);
+    return Math.ceil(Math.random() * max); // rounds up
 }

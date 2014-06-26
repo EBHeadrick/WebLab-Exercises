@@ -3872,8 +3872,8 @@ function checkCol (board) {
 function checkDiagonal (board) {
     var win = false;
 
-    if ((board[0,0] === board[1,1]) && (board[2,2] === board[1,1])) {win = true;};
-    if ((board[0,2] === board[1,1]) && (board[0,2] === board[1,1])) {win = true;};
+    if ((board[0][0] === board[1][1]) && (board[2][2] === board[1][1])) {win = true;};
+    if ((board[0][2] === board[1][1]) && (board[0][2] === board[1][1])) {win = true;};
 
     return win;
 }
@@ -3912,8 +3912,9 @@ var y= 0,
     ;
 all_games.forEach(function(board, i){
     if (gameWin (board)){
-        y = y+1;
+        y++;
         console.log("WIN " + i +"----"+ y)};
 })
 
 console.log(winStats);
+console.log("Total : " + (winStats.row+winStats.col+winStats.diag));

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Divsions Examples</title>
+    <style>
+        img {
+            width: 50%;
+            /* border: 4px solid; */
+            padding: 5px;
+        }
+        .outtake { /* blockquote has a class of outtake */
+            font-family: cursive;
+            font-style: italic;
+            font-size: larger;
+            color: aquamarine;
+            padding: 1em;
+            margin: 4em;
+        }
+        header {
+            background-color: azure!important;
+            font-family: fantasy;
+        }
+        body>header {
+            background-color: deeppink!important;
+            font-family: fantasy;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Divisions are Great NOT! using HTML 5 block tags</h1>
+    <p>
+        There are new tags that have divisions effects but are more semantic.
+    <ul>
+        <li>article</li>
+        <li>header</li>
+        <li>footer</li>
+        <li>nav</li>
+    </ul>
+    </p>
+</header>
+<nav>
+    <ol> <!--  ol>li*3>a.navLink (tab key)  -->
+        <li><a class="navLink" href="#article1">Article 1</a></li>
+        <li><a class="navLink" href="#article2">Article 2</a></li>
+        <li><a class="navLink" href="#article3">Article 3</a></li>
+    </ol>
+</nav>
+<article>
+    <a name="article1"></a>
+    <h2>Article Title One</h2>
+    <p>
+        <strong><em>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+        eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+        laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+        temporibus voluptatem voluptates.
+    </em></strong>
+    </p>
+    <p>
+        Lorem ipsum dolor <code>sit amet, consectetur</code> adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+        eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+        laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+        temporibus voluptatem voluptates.
+    </p><p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+    eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+    laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+    temporibus voluptatem voluptates.
+</p><p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+    eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+    laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+    temporibus voluptatem voluptates.
+</p>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+    eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+    laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+    temporibus voluptatem voluptates.
+</p>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+    eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+    laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+    temporibus voluptatem voluptates.
+</p>
+</article>
+<article>
+    <a name="article2"></a>
+    <h2>Article Title Two</h2>
+    <p>
+        <strong><em>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+            eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+            laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+            temporibus voluptatem voluptates.
+        </em></strong>
+    </p>
+    <pre>
+        <code>
+            here is my code
+            it should show up as how I am typing it
+            function foobar () {
+                return foo;
+            }
+        </code>
+    </pre>
+    <hr/>
+    <blockquote class="outtake">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor earum incidunt
+        <br>break tag<br/>
+        itaque necessitatibus recusandae veritatis voluptatum. Accusamus, asperiores at distinctio
+        ea eos officia officiis perferendis provident qui quis tempore!
+    </blockquote>
+    <hr/>
+    <img src="http://critterbabies.com/wp-content/gallery/kittens/cute-kitten-playing.jpg"
+         alt="Alternate text for the picture needed for 508"
+    />
+    <img src="http://critterbabies.com/wp-content/gallery/kittens/cute-kitten-playing.jpg"
+         alt="Alternate text for the picture needed for 508"
+         style="width: 25%"
+            />
+    <p>
+        Lorem ipsum dolor <code>sit amet, consectetur</code> adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+        eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+        laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+        temporibus voluptatem voluptates.
+    </p><p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+    eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+    laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+    temporibus voluptatem voluptates.
+</p><p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+    eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+    laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+    temporibus voluptatem voluptates.
+</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+        eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+        laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+        temporibus voluptatem voluptates.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+        eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+        laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+        temporibus voluptatem voluptates.
+    </p>
+</article>
+<article>
+    <a name="article3"></a>
+    <h2>Article Title Three</h2>
+    <p>
+        <strong><em>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+            eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+            laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+            temporibus voluptatem voluptates.
+        </em></strong>
+    </p>
+    <p>
+        Lorem ipsum dolor <code>sit amet, consectetur</code> adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+        eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+        laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+        temporibus voluptatem voluptates.
+    </p><p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+    eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+    laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+    temporibus voluptatem voluptates.
+</p><p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+    eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+    laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+    temporibus voluptatem voluptates.
+</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+        eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+        laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+        temporibus voluptatem voluptates.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores nam non? Accusantium deserunt dicta
+        eius eveniet explicabo id inventore iure, laboriosam modi necessitatibus optio, quidem quo quod tempora veniam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi, explicabo illum ipsam ipsum iusto
+        laboriosam laudantium modi molestiae necessitatibus nisi nulla placeat quae reprehenderit tempora, tempore
+        temporibus voluptatem voluptates.
+    </p>
+</article>
+<footer>
+    Footer in the page footnotes?
+    <ol>
+        <li>first footnote</li>
+        <li>second footnote</li>
+    </ol>
+</footer>
+
+</body>
+</html>

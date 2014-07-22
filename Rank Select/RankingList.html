@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Rank List</title>
+    <link rel="stylesheet" href="css/rank.css"/>
+</head>
+<body>
+
+    <h1>List of Favorite Sites</h1>
+    <header>
+            <form id="favorite-form" method="get" action="">
+            <input type="text" name="new-site" placeholder="Enter Favorite Site" required />
+            <!--<input type="number" name="rankStars" placeholder="&#9734;&#9734;&#9734;&#9734;&#9734;"/>-->
+            <select name="stars" id="new-starRank" required>
+                <option value="">&#9734;&#9734;&#9734;&#9734;&#9734;</option>
+                <option value="1star">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+                <option value="2star">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+                <option value="3star">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+                <option value="4star">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+                <option value="5star">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+            </select>
+                <button type="submit" formaction="gohere.html">Submit the Site</button>
+                <button type="reset">Reset Form</button>
+            </form>
+    </header>
+<ul>
+    <li class="rankRow">
+        <span class='site'>Deadwood SD</span>
+        <span class='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+    </li>
+    <li class="rankRow">
+        <span class='site'>Devils Tower WY</span>
+        <span class='stars'>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+    </li>
+    <li class="rankRow">
+        <span class='site'>Rocky Mountain Nation Park CO</span>
+        <span class='stars'>&#9733;&#9734;&#9734;&#9734;&#9734;</span>
+    </li>
+    <li class="rankRow">
+        <span class='site'>Mount Rushmore SD</span>
+        <span class='stars'>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    </li>
+    </ul>
+
+
+</body>
+</html>

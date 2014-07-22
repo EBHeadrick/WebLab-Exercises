@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Float Exercise</title>
+    <style>
+        #header {
+            background-color: #000;
+            color: #fff;
+            min-height: 50px;
+            position: relative;
+        }
+
+        #logo {
+            width: 50px;
+            height: 50px;
+            background-color: maroon;
+            position: absolute;
+            right: 0;
+        }
+        #headerText {
+            font-size: 80px;
+            text-align: center;
+        }
+        #nav {
+            background-color: #ccc;
+            /*height: 50px;*/
+        }
+        #nav ul,
+        #nav li,
+        #content ul,
+        #content li
+        {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #nav li {
+            float: left;
+        }
+
+        #nav a {
+            font-family: sans-serif;
+            color: navy;
+            padding: 10px 5px;
+            display: inline-block;
+            background-color: darkgrey;
+            margin: 5px 5px 5px 0;
+            text-decoration: none;
+        }
+
+        #nav a:first-child {
+            margin-left: 10px;
+        }
+
+        article,
+        aside{
+            float: left;
+        }
+
+        article {
+            width: 60%;
+            padding: 10px;
+            clear: both;
+            min-width: 400px;
+        }
+
+        aside {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            margin-left: 10px;
+            transition: all 1s;
+        }
+
+        aside:hover {
+            background-color: #ccc;
+            color: #fff;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+        /* Added by me */
+        @media (max-width: 500px;) {
+            article {
+                width: 100%;
+                max-width: 100%;
+            }
+            #headerText {
+                color: red;
+                font-size: 40px;
+            }
+        }
+        @media print {
+            #headerText, #nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="logo">X</div>
+    <div id="headerText">The Great Page</div>
+</div>
+<div id="nav">
+    <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">gallery</a></li>
+        <li><a href="#">about</a></li>
+    </ul>
+    <div class="clearfix"></div>
+</div>
+<div id="content">
+    <article>
+        <h1>
+            Article 1 Title
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eaque eius excepturi laudantium vel.
+            Accusantium illum incidunt modi nam, obcaecati quod totam? Alias amet exercitationem incidunt nulla quas
+            qui sed.</p>
+
+        <p>Alias amet architecto doloribus iure numquam tempore, vero voluptatum. Cum delectus dicta distinctio
+            dolores, dolorum ducimus eveniet ex excepturi inventore ipsam minus modi nam odit pariatur provident
+            quia unde ut!</p>
+
+        <p>A accusamus aliquam, distinctio dolor dolorum, ducimus eveniet exercitationem expedita illo laborum
+            libero magni nesciunt nobis odio possimus reiciendis rem saepe voluptas. Facilis harum maxime odio
+            perferendis similique ut voluptas!</p>
+
+        <p>Culpa dignissimos excepturi harum laborum modi! Aliquam architecto atque debitis dolorum, eveniet
+            explicabo fuga nihil, placeat, quidem saepe similique vero voluptas. Aliquid dolorem impedit laudantium
+            natus neque perferendis possimus voluptates?</p>
+    </article>
+    <aside>
+        <h2>Aside</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam dolor doloribus illum nobis odio voluptate voluptatibus. Adipisci culpa earum illum ipsa provident quibusdam quod rem. Ducimus harum neque quae.
+        </p>
+        <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi minima quo quod. Aliquid amet animi autem consequuntur, et eum fugit harum in laborum nisi officiis quaerat quasi ratione, rem ullam.
+        </p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor, ea error facere, laboriosam molestiae
+            odio odit officia qui reprehenderit repudiandae rerum totam veniam. Esse facere quaerat sunt ut
+            voluptates!</p>
+
+        <p>Cum debitis dicta distinctio eos facere harum nisi omnis pariatur quasi sit? Aspernatur at, consectetur
+            culpa cumque dolorem earum fugit ipsa mollitia nisi, odit perspiciatis quae tempora, ut velit
+            voluptatum!</p>
+
+        <p>Consectetur delectus doloremque, eaque error est et, excepturi illo impedit iure libero molestiae
+            necessitatibus nemo perferendis, perspiciatis placeat porro provident quae recusandae reprehenderit
+            repudiandae tempora totam ut. Explicabo, repellendus, reprehenderit!</p>
+
+        <p>Ab accusamus accusantium adipisci architecto autem consequatur consequuntur dolorem ea, enim eum,
+            explicabo facere illum iste iure laborum laudantium magni mollitia nesciunt nihil non omnis quidem quos
+            ratione rem rerum!</p>
+    </aside>
+
+    <article>
+        <h1>
+            Article 1 Title
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eaque eius excepturi laudantium vel.
+            Accusantium illum incidunt modi nam, obcaecati quod totam? Alias amet exercitationem incidunt nulla quas
+            qui sed.</p>
+
+        <p>Alias amet architecto doloribus iure numquam tempore, vero voluptatum. Cum delectus dicta distinctio
+            dolores, dolorum ducimus eveniet ex excepturi inventore ipsam minus modi nam odit pariatur provident
+            quia unde ut!</p>
+
+        <p>A accusamus aliquam, distinctio dolor dolorum, ducimus eveniet exercitationem expedita illo laborum
+            libero magni nesciunt nobis odio possimus reiciendis rem saepe voluptas. Facilis harum maxime odio
+            perferendis similique ut voluptas!</p>
+
+        <p>Culpa dignissimos excepturi harum laborum modi! Aliquam architecto atque debitis dolorum, eveniet
+            explicabo fuga nihil, placeat, quidem saepe similique vero voluptas. Aliquid dolorem impedit laudantium
+            natus neque perferendis possimus voluptates?</p>
+    </article>
+    <aside>
+        <h2>Aside</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam dolor doloribus illum nobis odio voluptate voluptatibus. Adipisci culpa earum illum ipsa provident quibusdam quod rem. Ducimus harum neque quae.
+        </p>
+        <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+    </aside>
+    <article>
+        <h1>
+            Article 1 Title
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eaque eius excepturi laudantium vel.
+            Accusantium illum incidunt modi nam, obcaecati quod totam? Alias amet exercitationem incidunt nulla quas
+            qui sed.</p>
+
+        <p>Alias amet architecto doloribus iure numquam tempore, vero voluptatum. Cum delectus dicta distinctio
+            dolores, dolorum ducimus eveniet ex excepturi inventore ipsam minus modi nam odit pariatur provident
+            quia unde ut!</p>
+
+        <p>A accusamus aliquam, distinctio dolor dolorum, ducimus eveniet exercitationem expedita illo laborum
+            libero magni nesciunt nobis odio possimus reiciendis rem saepe voluptas. Facilis harum maxime odio
+            perferendis similique ut voluptas!</p>
+
+        <p>Culpa dignissimos excepturi harum laborum modi! Aliquam architecto atque debitis dolorum, eveniet
+            explicabo fuga nihil, placeat, quidem saepe similique vero voluptas. Aliquid dolorem impedit laudantium
+            natus neque perferendis possimus voluptates?</p>
+    </article>
+    <aside>
+        <h2>Aside</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam dolor doloribus illum nobis odio voluptate voluptatibus. Adipisci culpa earum illum ipsa provident quibusdam quod rem. Ducimus harum neque quae.
+        </p>
+        <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+    </aside>
+</div>
+</body>
+</html>

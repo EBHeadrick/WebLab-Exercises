@@ -1,0 +1,19 @@
+body {
+    padding: 5px 5px;
+    margin: 0;
+    font-family: 'Open sans', sans-serif;
+    font-variant: small-caps;
+}
+
+ul {
+    list-style: none;
+    width: 400px
+}
+
+li {
+    /*display: inline-block;*/
+}
+
+.stars {
+    float: right;
+}

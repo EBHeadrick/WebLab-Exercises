@@ -1,0 +1,67 @@
+.specialDishes {
+    border: 3px solid hotpink;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px
+}
+.specialDishes thead td {
+    color: hotpink;
+    font-weight: normal;
+    width:40px;
+    font-size: 9px;
+}
+.specialDishes thead td:nth-child(3) {
+    color: hotpink;
+    font-weight: bolder;
+    width:150px;
+    font-size: 20px;
+}
+.columns {
+    width: 100%;
+    margin: 20px;
+}
+.col {
+    float: left;
+    width: 45%
+}
+.col:last-child {
+    margin-left: 65px;
+}
+.col h1,
+.col h2 {
+    text-align: center;
+    color: red;
+}
+.hours,
+.lunchSpecials p {
+    color: red;
+    text-align: center;
+    font-size: 12px;
+    margin-top: -2em;
+}
+.lunchSpecials {
+    border-bottom: 5px dashed #800080;
+    columns: 2;
+    padding-bottom: 15px;
+}
+span.itemNumber {
+    padding-right: 5px;
+    display: inline-block;
+    width: 30px;
+    text-align: right;
+}
+span.itemDescription {
+    margin-left: 51px;
+    font-size: x-small;
+    display: block;
+}
+span.itemPrice {
+    float: right;
+}
+body {
+    padding: 0;
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: greenyellow;
+    max-width: 750px;
+}

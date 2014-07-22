@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+HTML5
+  div/span
+    header/footer
+    article/aside
+    nav
+
+Tables
+  table
+    thead
+    tbody
+    tr - table row
+    td - cell
+
+-->
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Layout Examples to Practice CSS</title>
+    <style>
+        div {
+            border: 1px solid blue;
+            width: 200px;
+            height: 200px;
+            overflow: auto;  <!-- hidden   scroll -->
+            position: relative;
+            z-index: 2;
+        }
+        div p {
+            color: deeppink;
+        }
+        p {
+            color: red;
+        }
+        div#box1 {
+            background: lightpink;
+        }
+        #box1 {
+            background: lightpink;
+            position: absolute;
+            z-index: auto;
+            top: 0px;
+            right: 0px;
+        }
+        span.span1 {
+            border-right:;
+        }
+    </style>
+</head>
+<body>
+<div id="box1">
+    <h1>Box One</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eius laborum libero officiis quasi tempore 
+        ullam vero voluptatem. Autem consequatur deleniti, eos facilis harum nihil quam quisquam. Nobis, odio possimus.
+    </p>
+</div>
+<div id="box2">
+    <h2>Box Two</h2>
+    <span class="span1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolorum eaque eos fugit illum incidunt 
+        ipsam molestiae natus nemo nisi numquam obcaecati optio, praesentium rem reprehenderit ullam unde voluptatum? Nemo.
+    </span>
+</div>
+<div id="box3">
+    <h3>Box Three</h3>
+</div>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error minima quidem sunt tempora? Dolorum fugit,
+    incidunt laborum nisi praesentium similique voluptatem! Distinctio et in maxime soluta ullam! Omnis, praesentium?
+</p>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            background-color: beige;
+        }
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: deeppink;
+            border-color: greenyellow;
+            border-width: 5px;
+            margin-left: 300px;
+        }
+        .box.hoover {
+            background-color: #ffff00;
+        }
+        .box.click {
+            background-color: #800080;
+        }
+        input.error {
+            background-color: red;
+        }
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+</head>
+<body>
+<div class="box">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolorum incidunt quam quasi quia quidem
+        reprehenderit sed voluptas. Aspernatur, consectetur delectus fugit impedit nostrum qui quidem quod
+        reprehenderit sit! Quisquam!</p>
+</div>
+<div class="box">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolorum incidunt quam quasi quia quidem
+        reprehenderit sed voluptas. Aspernatur, consectetur delectus fugit impedit nostrum qui quidem quod
+        reprehenderit sit! Quisquam!</p>
+</div>
+<script>
+    jQuery(document).ready(function ($) {
+
+        $("div.box").on('mouseover', function (event){
+            $(this).addClass('hoover');
+        })
+        $("div.box").on('mouseout', function (event){
+            $(this).removeClass('hoover');
+        })
+//        $("body.div.box").on('click', function (event){
+//            $(this).toggleClass('click');
+//        })
+        $("body").on('click', function (event){
+            var target = $(event.target);
+            console.log(target.parent());
+            if (target.is("div.box") || target.parent(".box")){
+                target.toggleClass('click');
+                target.parent(".box").toggleClass('click');
+            } else {
+                $(this).children('.box').removeClass('click');
+            }
+            switch
+        })
+
+
+    });
+    // jQuery has a no conflict
+    // these are the same as the function above.
+    //    $(document).on('ready', function(){});
+    //    $(function(){});
+
+</script>
+
+</body>
+</html>

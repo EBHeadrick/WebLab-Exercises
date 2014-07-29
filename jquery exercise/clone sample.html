@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="jquery/template">
+        {}
+    </script>
+</head>
+<body>
+<div id="container">
+    <label>Name : </label>
+    <input class="name" type="text" name="name" />
+    <label>Hours : </label>
+    <input class="hours" type="number" name="hours" />
+    <button type="submit" id="add">Add</button>
+    <button type="reset">Reset</button>
+
+    <hr/> <!-- Horizontal Rule -->
+
+    <table id="timeSheet">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Hours</th>
+        </tr>
+
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <table class="templateTable">
+        <tr class="templateRow">
+        <td class="name"></td>
+        <td class="hours"></td>
+        </tr>
+    </table>
+
+<script>
+
+    jQuery(document).ready(function () {
+        var inputName = $("input.name");
+        var inputHours = $("input.hours");
+        var addButton = $("#add");
+        var tableEl = $("#timeSheet tbody");
+        var rowTemplate = $("table.templateTable tr.templateRow")
+    });
+
+    function validate(elements){
+        var valid = true;
+
+        elements.foreach(function(){
+           var passed = false;
+            switch (el.data('type')){
+
+            }
+        });
+    }
+
+</script>
+
+</body>
+</html>

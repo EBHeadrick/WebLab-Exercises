@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .stars {
+            font-size : 36px;
+        }
+        .star {
+            border : 1px solid black;
+            background-color: white;
+        }
+        .star.click {
+            background-color: deeppink;
+        }
+        .star.hoover {
+            background-color: deeppink;
+        }
+
+
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+</head>
+<body>
+<div class="stars">
+    <span class="star">&#9734;</span>
+    <span class="star">&#9734;</span>
+    <span class="star">&#9734;</span>
+    <span class="star">&#9734;</span>
+    <span class="star">&#9734;</span>
+</div>
+
+<script>
+
+    $(function(){
+
+
+        $('.stars').on('mouseover', '.star', function(){
+            var el = $(this);
+            el.addClass('hoover');
+            el.prevAll('.star').addClass('hoover');
+        });
+
+        $('.stars').on('mouseout', '.star', function(){
+            var el = $(this);
+            el.removeClass('hoover');
+        });
+
+
+        $('.stars').on('click', '.star', function(){
+            var el = $(this);
+            if (el.hasClass('click')){
+                el.removeClass('click');
+                el.nextAll('.star').removeClass('click');
+                el.nextAll('.star').html('&#9734;');
+
+            }
+            el.addClass('click');
+            el.prevAll('.star').addClass('click');
+            el.html('&#9733;');
+            el.prevAll('.star').html('&#9733;');
+        });
+
+    });
+
+</script>
+
+</body>
+</html>

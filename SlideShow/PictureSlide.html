@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .smallView {
+            height: 350px;
+            width: 400px;
+            border-style: double;
+            border-width: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        .allPictures {
+            height: 350px;
+            position: absolute;
+            display: inline-block;
+        }
+        img {
+            width: 400px;
+            height: 350px;
+            padding: 0;
+            margin: 0;
+            float: left;
+        }
+
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+</head>
+<body>
+<div class="smallView">
+<div class="allPictures">
+    <img src="darth%20vader.jpg" />
+    <img src="DSC00225.JPG"  />
+    <img src="DSC00229.JPG"  />
+</div>
+</div>
+
+<script>
+
+    $(function (){
+//        console.log($("div.allPictures").children().length);
+//        console.log($("img").width());
+//        console.log($("div.allPictures").children().length * $("img").width());
+        var width = ($("div.allPictures").children().length * $("img").width());
+        $(".allPictures").css("width", width)
+
+        var marginSet = 0;
+
+        $(".allPictures").on("click", function () {
+            marginSet -= 400;
+            if (marginSet === -width) {marginSet = 0;}
+            console.log(marginSet +" "+ width + " ");
+            $(".allPictures").css("margin-left", marginSet);
+        })
+    })
+
+</script>
+
+</body>
+</html>

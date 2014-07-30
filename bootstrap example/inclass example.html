@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+
+    <!-- Latest CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Optional theme -->
+    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
+
+    <!-- Latest JavaScript -->
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-sm-3 col-sm-offset-2 well">
+        <p>Test Grid</p>
+        <button class="btn btn-danger">Danger</button>
+
+    </div>
+    <div class="col-sm-4 col-sm-offset-3 well">
+        <p>Test 2 Grid</p>
+        <div class="row">
+            <div class="col-xs-4 well bg-primary">
+                <p>Imbedded Grid</p>
+            </div>
+            <div class="col-xs-4 well col-xs-offset-1 bg-success">
+            <p class="glyphicon glyphicon-screenshot">Large but inside a mix . best not to </p>
+        </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-sm-10 col-sm-offset-2">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>EBH</td>
+            <td>Home Boulder</td>
+            <td>303.442.1625</td>
+        </tr>
+        <tr>
+            <td>MJD</td>
+            <td>apt B</td>
+            <td>303.517.5225</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3 col-lg-offset-1">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Dropdown
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <!-- HTML to write -->
+        <a href="#" data-toggle="tooltip" title="Some tooltip text!">Hover over me</a>
+
+        <!-- Generated markup by the plugin -->
+        <div class="tooltip top" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">
+                Some tooltip text!
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-10 btn-group-lg" >
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+    </div></div>
+
+</body>
+</html>
